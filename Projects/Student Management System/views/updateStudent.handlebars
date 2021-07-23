@@ -1,0 +1,53 @@
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow text-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">S.M.S</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            {{!-- <a class="nav-link " aria-current="page" href="/showStudent">Show Student</a> --}}
+          </li>
+          <li class="nav-item">
+            {{!-- <a class="nav-link active" href="/addStudent">Add Student</a> --}}
+          </li>
+        </ul>
+        <a href="/logout" class="btn btn-outline-success" type="submit">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <div style="background-color: #f3f3f3" class="pt-5 d-flex justify-content-center ">
+    <div class="bg-white shadow rounded p-3 d-flex justify-content-center align-items-center">
+      <form method="POST">
+        <h2 class="text-center mb-3">Update Student</h2>
+        <div class="d-flex">
+          <div class="m-2">
+            <label for="exampleInputEmail1" class="form-label">Name *</label>
+            <input placeholder="Enter student name (e.g: Saleem)"  value={{std.name}} type="text" name="name" class="form-control" required>
+          </div>
+          <div class="m-2">
+            <label for="exampleInputPassword1" class="form-label">Rollno *</label>
+            <input  placeholder="Enter rollno (e.g: 2017-ce-091)" value={{std.rollno}} type="text" name="rollno" class="form-control" required>
+          </div>
+        </div>
+      
+        <div class="d-flex">
+          <div class="m-2">
+            <label for="exampleInputPassword1" class="form-label">Department *</label>
+            <input placeholder="Enter department name (e.g: CE)" value={{std.dept}} type="text" name="dept" class="form-control" required>
+          </div>
+          <div class="m-2">
+            <label for="exampleInputPassword1" class="form-label">GPA *</label>
+            <input placeholder="Enter gpa (e.g: 3.45)" value={{std.gpa}} type="text" name="gpa" class="form-control" required>
+          </div>
+        </div>
+
+        <button type="submit" class="mt-2 btn w-100 btn-success">Update Student</button>
+      </form>
+    </div>
+  </div>
+</div>

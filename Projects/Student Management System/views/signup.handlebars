@@ -1,0 +1,23 @@
+<div style="height: 100vh; background-color: #f3f3f3" class="d-flex justify-content-center align-items-center">
+    <div class="bg-white shadow rounded p-3 d-flex justify-content-center align-items-center">
+        <form method="POST">
+            <h2 class="text-center mb-3">Sign Up</h2>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Name *</label>
+                <input value="{{data.name}}" placeholder="hint: morethan 2 character" type="text" name="name" class="form-control"
+                    required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password *</label>
+                <input placeholder="hint: morethan 6 characters" type="password" name="passwd" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Confirm Password *</label>
+                <input placeholder="hint: morethan 6 characters" type="password" name="cfmPasswd" class="form-control" required>
+            </div>
+            <label class="text-danger form-label">{{message}}</label>
+
+            <button type="submit" class="mt-2 btn w-100 btn-success">Sign Up</button>
+        </form>
+    </div>
+</div>

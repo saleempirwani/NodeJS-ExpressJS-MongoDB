@@ -1,0 +1,19 @@
+<div style="height: 100vh; background-color: #f3f3f3" class="d-flex justify-content-center align-items-center">
+    <div class="bg-white shadow rounded p-3 d-flex justify-content-center align-items-center">
+        <form method="POST">
+            <h2 class="text-center mb-3">Login</h2>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Name *</label>
+                <input placeholder="Enter your username" value="{{data.name}}" type="text" name="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password *</label>
+                <input  placeholder="Enter your password" type="password" name="passwd" class="form-control" required>
+            </div>
+            <label class="text-danger form-label">{{message}}</label>
+            <button type="submit" class="mt-2 btn w-100 btn-success">
+                Login
+            </button>
+        </form>
+    </div>
+</div>
