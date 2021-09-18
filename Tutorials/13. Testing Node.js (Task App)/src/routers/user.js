@@ -2,10 +2,10 @@ const express = require("express");
 const sharp = require("sharp");
 const User = require("../models/user");
 const auth = require("../middleware/auth");
-const {
-  sendWelcomeEmail,
-  sendCancellationEmail,
-} = require("../emails/accounts");
+// const {
+//   sendWelcomeEmail,
+//   sendCancellationEmail,
+// } = require("../emails/accounts");
 
 const router = new express.Router();
 
@@ -16,7 +16,7 @@ const upload = multer({
     fileSize: 1000000, // 1MB
   },
   fileFilter(req, file, cb) {
-    console.log(" Hello ========> ", file.originalname);
+    // console.log(" Hello ========> ", file.originalname);
     if (!file.originalname.match(/\.(jpg|jpeg|png)$/)) {
       return cb(new Error("Please upload image."));
     }

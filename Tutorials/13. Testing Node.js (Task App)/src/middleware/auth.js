@@ -14,7 +14,7 @@ const auth = async (req, res, next) => {
     next();
   } catch (e) {
     res.status(401).send({ error: "User not authenticated" });
-    // console.log("Middleware ERROR ========> ", e);
+    // // console.log("Middleware ERROR ========> ", e);
   }
 };
 
