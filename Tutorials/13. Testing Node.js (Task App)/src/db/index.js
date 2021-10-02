@@ -1,9 +1,6 @@
 const mongoose = require("mongoose");
 
-// console.log(" Hello   =======> ", process.env.MONGODB_URL)
-// console.log(" Hello   =======> ", process.env.JWT_SECRET)
-// console.log(" Hello   =======> ", process.env.SENDGRID_API_KEY)
-// console.log(" Hello   =======> ", process.env.PORT)
+// console.log("MONGODB_URL ====> ", process.env.MONGODB_URL)
 
 mongoose.connect(process.env.MONGODB_URL, {
   useNewUrlParser: true,
