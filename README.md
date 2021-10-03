@@ -1,4 +1,10 @@
-# NodeJS-ExpressJS-MongoDB
+# NodeJS, ExpressJS and MongoDB
+
+## Projects
+* Weather App (Using third party API): https://selim-weather-app.herokuapp.com
+* Realtime Chat App (Using Socket.io): https://selim-chat-app.herokuapp.com
+* Student Management System (CRUD Operations).
+
 
 ##### Quick Start REST_API
 ```
@@ -47,6 +53,3 @@ const myFunction () => {
 myFunction()
 ```
 
-## Projects
-* Weather App (Third Party API): https://selim-weather-app.herokuapp.com
-* Student Management System (CRUD Operations).
